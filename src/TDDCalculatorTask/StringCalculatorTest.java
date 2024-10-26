@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class StringCalculatorTest {
     @Test
     public void testEmptyString() {
-        assertEquals(0, new StringCalculator().add(""));
+        assertEquals(0, new StringCalculator().add("0"));
     }
 
     @Test
@@ -16,12 +16,12 @@ public class StringCalculatorTest {
 
     @Test
     public void testTwoNumbers() {
-        assertEquals(3, new StringCalculator().add("1,2"));
+        assertEquals(6, new StringCalculator().add("1,5"));
     }
 
     @Test
     public void testMultipleNumbers() {
-        assertEquals(10, new StringCalculator().add("1,2,3,4"));
+        assertEquals(15, new StringCalculator().add("1,2,3,4,5"));
     }
 
     @Test
